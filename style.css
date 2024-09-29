@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для меню */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Стили для header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgb(251, 250, 250);
+    z-index: 1000;
+}
+
+/* Стили для заголовка в header */
+.title h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 30px;
+    font-weight: 200;
+}
+
+/* Общие стили для секций */
+.first, .second, .third {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.first img, .second img, .third img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стили заголовков */
+.first h1, .second h2, .third h3 {
+    position: absolute;
+    color: white;
+    z-index: 10;
+}
+
+.first h1 {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    text-align: right;
+}
+
+.second h2 {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 60px;
+}
+
+.third h3 {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 50px; /* Размер заголовка */
+}
+
+/* Красивые кнопки */
+.first button, .second button, .third button {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px; /* Закругленные углы */
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Градиентный фон */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+/* Эффект при наведении на кнопки */
+.first button:hover, .second button:hover, .third button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Изменение градиента при наведении */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Более глубокая тень */
+    transform: translateY(-3px); /* Легкий подъём кнопки */
+}
+
+/* Стили для кнопки в первой секции */
+.first button {
+    top: 65%;
+    right: 10%;
+    width: 300px;
+}
+
+/* Стили для кнопки во второй секции */
+.second button {
+    top: 65%;
+    left: 10%;
+    width: 300px;
+}
+
+/* Стили для кнопки в третьей секции */
+.third button {
+    top: 65%;
+    left: 10%;
+    width: 300px;
+}
+
+/* Стили для футера */
+#main-footer{
+    position: relative;
+    background-color: #000000; /* Темный фон */
+    color: #020202; /* Белый текст */
+    padding: 40px 0;
+    opacity: 0;}
